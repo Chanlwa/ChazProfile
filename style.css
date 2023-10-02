@@ -1,0 +1,147 @@
+*html, body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: blue;
+  background-color: lightgoldenrodyellow;
+  text-align: justify; 
+  font-size: larger;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div header{
+  background-color: lightblue;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 02px 02px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  position: relative;
+}
+
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 1px;
+  background: #fff000;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.2s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+  background: #fff000;
+  transition: 0.5s;
+}
+
+.home-text {
+    color: blue;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.home-img {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 1000%;
+  padding: 1em;
+}
+.about-text {
+  display: flex;
+  column-gap: 10%;
+  padding-top: 10px;
+}
+li {
+    color: red;
+    list-style-type: square;
+}
+
+.fa {  
+  padding: 10px;  
+  text-align: center;  
+  margin: 5px 2px;  
+  font-size: 30px;  
+  width: 30px;
+  border-radius: 20px;
+}  
+.fa-facebook {  
+  background: white;  
+  color: #3b5998;  
+}  
+.fa-linkedin {
+  background: white;
+  color: #007bb6;
+}
+.fa-twitter {
+  background: white;
+  color: #00aced;
+}
+.fa-whatsapp {
+  background: red;
+  color: green;
+}
+a:link {
+    color: blue;
+  }
+    a:visited {
+    color: green;
+  }
+img {
+  border-bottom-left-radius: 20%;
+  border-top-right-radius: 20%;
+  max-width: fit-content;
+  padding-left: 10px;
+  padding-top: 20px;
+}
+
+/* container */
+.columns-3 {
+  max-width: 99%;
+  margin-inline: auto;
+  display:flex;
+  flex-flow: row wrap;
+  padding: 10px;
+  font-size: 0.8em;
+  gap: 2rem;
+  text-align: center;
+  border: 3px solid rgb(251, 75, 75);
+  border-radius: 5px;
+  margin-inline: auto;
+}
+
+/* columns */
+.columns-3 > * {
+  width: calc(99% / 3);
+  flex-grow: 1;
+  flex-basis: 100px;
+  justify-content: space-evenly;
+}
+/* Optional */
+.bg-red, .bg-pink, .bg-orange {
+background-color: cornsilk;
+}
+
+.container {
+  font-size: 0.8em;
+  font-style: italic;
+  text-align: center;
+}
